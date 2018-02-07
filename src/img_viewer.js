@@ -3,13 +3,17 @@ import small from '../assets/small.jpg';
 
 import '../styles/img_viewer.css';
 
-const addImg = ( _img ) =>{
+export default () =>{
 
-    const img = document.createElement('img');
-    img.src= _img;
-    
-    document.body.appendChild( img );
+    const addImg = ( _img ) =>{
+
+        const img = document.createElement('img');
+        img.src= _img;
+        
+        document.body.appendChild( img );
+    }
+
+    addImg( small );
+    addImg( big );
+
 }
-
-addImg( small );
-addImg( big );
